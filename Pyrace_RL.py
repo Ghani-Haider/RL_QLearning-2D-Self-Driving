@@ -15,7 +15,7 @@ def simulate():
     total_rewards = []
     training_done = False
     threshold = 1000
-    env.set_view(True)
+    env.set_view(False)
     for episode in range(NUM_EPISODES):
 
         total_rewards.append(total_reward)
@@ -226,4 +226,4 @@ if __name__ == "__main__":
 
     q_table = np.zeros(NUM_BUCKETS + (NUM_ACTIONS,), dtype=float)
     simulate()
-    #load_and_play()
+    # load_and_play()
